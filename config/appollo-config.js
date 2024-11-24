@@ -20,6 +20,6 @@ const cache = new InMemoryCache({
 });
 
 export const client = new ApolloClient({
-  uri: import.meta.VITE_API_URL,
+  uri: import.meta.env.VITE_API_URL,
   cache,
 });
