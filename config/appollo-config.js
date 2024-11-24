@@ -20,6 +20,6 @@ const cache = new InMemoryCache({
 });
 
 export const client = new ApolloClient({
-  uri: "http://localhost:3030/graphql",
+  uri: "https://stalwart-baklava-e798f7.netlify.app/.netlify/functions/api/graphql",
   cache,
 });
