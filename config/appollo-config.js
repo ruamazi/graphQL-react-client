@@ -20,6 +20,6 @@ const cache = new InMemoryCache({
 });
 
 export const client = new ApolloClient({
-  uri: "https://stalwart-baklava-e798f7.netlify.app/.netlify/functions/api/graphql",
+  uri: import.meta.VITE_API_URL,
   cache,
 });
